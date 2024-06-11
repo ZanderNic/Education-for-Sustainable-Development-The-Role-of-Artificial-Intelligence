@@ -5,6 +5,8 @@
 \documentclass[]{lni}
 
 
+% TODO die hier vlt Book capters and books rausnehmen sind die (10409934) und (angwin2022machine)
+
 %% Schöne Tabellen mittels \toprule, \midrule, \bottomrule
 \usepackage{booktabs}
 
@@ -14,16 +16,20 @@
 
 %%Für bib
 \usepackage[backend=biber, style=ieee]{biblatex}
+\AtBeginBibliography{\selectlanguage{english}}
+
+
 
 \addbibresource{education.bib} % Hinzufügen der .bib-Datei
 
+\usepackage[english]{babel}
 
 \begin{document}
 
 \title[]{Education for Sustainable Development: The Role of Artificial Intelligence}
 
 \author[1]{Nicolas Zander}{nicolas.zander@st.oth-regensburg.de}{}
-\affil[1]{OTH Regensburg\\Seybothstraße 2, Regensburg\\Matrickelnummer: 3363036}
+\affil[1]{OTH Regensburg\\Seybothstraße 2, Regensburg\\Matrikelnummer: 3363036}
 
 \maketitle
 
@@ -31,9 +37,9 @@
 
 This paper explores how artificial intelligence (AI) can contribute to specific Sustainable Development Goals (SDGs) set by the United Nations, 
 particularly those related to quality education and reducing global inequalities, through the lens of education for sustainable development (ESD).
-An analysis of current research on the integration of AI-driven tools in education shows that these technologies can personalise the learning experience for learners. 
+An analysis of current research on the integration of AI driven tools in education shows that these technologies can personalise the learning experience for learners. 
 This helps students to achieve their best academic performance. However, several challenges have been highlighted,
-such as unequal access to AI tools, algorithmic bias, privacy issues and an over-reliance on technology that could undermine the importance of human interaction in learning. 
+such as unequal access to AI tools, algorithmic bias, privacy issues and an over reliance on technology that could undermine the importance of human interaction in learning. 
 These findings highlight the ambivalent nature of AI in education, revealing both the potential for unprecedented advances and the critical need for ethical considerations and
 equitable access. This approach ensures that the benefits of AI in education are shared by all learners, regardless of background or culture.
 \end{abstract}
@@ -51,8 +57,7 @@ this research primarily focuses on areas such as the construction industry, logi
 \cite{KAR2022134120}.
 Nevertheless, education is also a critical resource that must be managed sustainably. It is essential that all learners possess the requisite knowledge and 
 skills to promote sustainable development in the future 
-\cite{OFlaherty2018},
- especially at a time when technological progress is occurring at an accelerated pace \cite{Judijanto2022}.
+\cite{OFlaherty2018}, especially at a time when technological progress is occurring at an accelerated pace \cite{Judijanto2022}.
 This is also reflected in the UN's 2030 Sustainable Development Goals, which aim to promote inclusive, equitable, and quality education and provide 
 lifelong learning opportunities for all
 \cite{un_sdg4}. 
@@ -61,90 +66,133 @@ However the introduction of AI into educational processes raises a number of que
 sustainable and effective implementation of this technology.
 Given the pivotal role of education for sustainable development, it is imperative to ascertain the potential of AI in ensuring sustainable education in the future.
 %
-%
+% das sind 1200 zeichen
 %
 % ! Methoden 
 \section{Methods}
-In order to collect pertinent information from reliable sources, we employed a review process that included the use of specific criteria. 
-Accordingly, the following criteria for inclusion are presented:\\
-- Articles written in English \\
-- Articles published between 2015 and 2024\\
-- Articles that appeared in conference proceedings and scholarly journals \\
-- Books and Book Chapters \\ % TODO die hier vlt rausnehmen sind die (10409934) und (angwin2022machine)
+In order to collect pertinent information from reliable sources, we employed a review process that included the use of specific criteria. Accordingly, the following criteria for inclusion are presented:
+\begin{itemize}
+    \hangindent=0.5in
+    \hangafter=1
+    \item Articles written in English
+    \item Articles published between 2015 and 2024
+    \item Articles that appeared in conference proceedings and scholarly journals
+    \item Books and Book Chapters
+\end{itemize}
 
-In light of the aforementioned objectives, the following research questions were developed with the intention of enabling us to obtain information from primary studies: \\
-- What are the potential benefits of AI-driven technologies for enhancing the effectiveness and accessibility of education for sustainable development?\\ 
-- What are the key challenges that need to be addressed in order to achieve this goal?
+In light of the aforementioned objectives, the following research questions were developed with the intention of enabling us to obtain information from primary studies:
+\begin{itemize}
+    \hangindent=0.5in
+    \hangafter=1
+    \item What are the potential benefits of AI-driven technologies for enhancing the effectiveness and accessibility of education?
+    \item What are the key challenges that need to be addressed in order to achieve this goal?
+\end{itemize}
 %
 %
 %
 % ? Hauptteil
-\section{Findings}
+\section{Results}
+%
+\subsection{Benefits}
+%
 When considering the education sector, it is evident that there is a clear trend towards the digitization of learning materials. 
 This is accompanied by the emergence of a multitude of online courses and platforms, which generate a significant amount of data \cite{Lin2023}. The analysis of 
 such datasets can be conducted using AI algorithms to identify complex patterns or to develop new teaching methods and approaches.
-% Yousuf, Mohd Applications in Education
+%
 In this context, AI can facilitate a transformation in traditional learning methodologies by integrating various innovative applications \cite{Judijanto2022}, 
-as outlined by Yousuf Mohd in his article \cite{9670009}. 
+as outlined by Yousuf Mohd \cite{9670009}. 
 %
-One illustrative example of this transformation is personalized learning \cite{shemshack2020systematic}, which involves the implementation of learning materials 
-that can adapt to the learner's needs in real time. Through personalized learning, each student receives unique learning materials tailored to their specific needs 
-\cite{9670009}, which can include adjusting the difficulty level of tasks and providing assignments designed according to the learner's type and sensory preferences
- \cite{9457948} \cite{7742268}. This approach effectively supports and motivates students throughout their learning process \cite{shemshack2020systematic}, ultimately 
-leading to improved academic performance \cite{shemshack2020systematic} \cite{9457948}.
-By enabling personalized learning, the education system can transition away from the traditional classroom approach towards a more student-centered approach 
-\cite{Lin2023}. 
+% dieser punkt sind so 1000 zeichen 
+One example of this transformation is personalized learning \cite{shemshack2020systematic}, which involves implementing learning materials that can adapt 
+to the learner's needs in real time. Through personalized learning, each student receives unique materials tailored to their specific requirements \cite{9670009}. 
+These materials can adjust the difficulty level of tasks according to the learner's pace and provide assignments designed to match the learner's type and sensory 
+preferences \cite{9457948} \cite{7742268}. This approach addresses the strengths, weaknesses, and interests of students in an effective manner, supporting and motivating them throughout their learning 
+process \cite{shemshack2020systematic}. Additionally, it reduces the amount of time and resources required in comparison to traditional learning \cite{Lin2023}.
+As a result, students' academic performance improves \cite{shemshack2020systematic} \cite{9457948} and the likelihood of dropout is reduced \cite{9368432}.
+By enabling personalized learning, the education system can transition away from the traditional classroom approach towards a more student-centered model \cite{Lin2023}.
 %
-
-
-% ? Neuer Punkt
-However, the advent of the new student-centered approach based on artificial intelligence should not be viewed as a replacement for traditional teachers. Rather, 
+%
+% Glaube das passt hier 
+However, the advent of the new student centered approach based on artificial intelligence should not be viewed as a replacement for traditional teachers. Rather, 
 the technology can assist teachers by relieving them of some of their tasks \cite{7742268} \cite{Lin2023} \cite{Tanveer2020}. Nevertheless, the integration of 
-these new technologies will undoubtedly alter the role of teachers, potentially leading to a transformation in the approach to teaching 
-\cite{Lin2023} \cite{9670009}.  
+these new technologies will undoubtedly alter the role of teachers, potentially leading to a transformation in the approach to teaching \cite{Lin2023} \cite{9670009}.  
 Furthermore, the technologies can address the shortage of teachers or educational opportunities \cite{cai2021review} \cite{Blanchard2015}.  
-% ? bis hier sind es im findings 1900 zeichen 
-
-
+%
+% Neuer Punkt zu ITS
+Another technology that can assist in addressing the growing disparity between the scarcity of qualified specialist educators and the expanding number of learners 
+is the utilization of intelligent tutoring systems (ITS) \cite{9670009}. ITS supports educators by providing instruction and immediate feedback to students, effectively 
+helping them manage and resolve problems as they arise \cite{9582029}. Therefore, ITS creates a smart learning environment that allows students to learn 
+efficiently without the constant presence of a teacher \cite{9582029}. Additionally, in combination with personalized learning the  systems can track student 
+progress and adapt to individual learning styles, which enhances the overall learning experience. By leveraging ITS, educational institutions can ensure that all 
+students receive high-quality education, regardless of the availability of specialized teaching staff.
+%
+%  bs hier sind es im findings 1900 zeichen 
+%
+%
+%
+\subsection{Challenges}
 % ? Challanges ab hier 
-One of the most significant obstacles is the absence of the requisite infrastructure to effectively integrate the novel AI-driven technologies 
-into the conventional pedagogical framework 
-\cite{Lin2023}. 
+One of the most significant obstacles is the absence of the requisite infrastructure to effectively integrate novel AI-driven technologies into the conventional 
+pedagogical framework \cite{Lin2023}. This issue is particularly prevalent in developing countries, where access to and affordability of electricity and hardware 
+are major barriers \cite{Tanveer2020}. For example, only 31 percent of public schools in Sub-Saharan Africa have access to electricity \cite{Global2021}. Additionally, the 
+required hardware and systems can be very expensive.
 %
-The issue is particularly prevalent in developing countries, where access to and affordability of electricity, hardware, and data are significant obstacles
-\cite{Tanveer2020}. 
+This situation could potentially exacerbate the disparity between affluent and disadvantaged individuals, as the deployment 
+of costly technology in education may inadvertently hinder economically challenged students from accessing quality educational opportunities \cite{9670009}.
 %
-Additionally, there is the challenge of ensuring that students and educators have the necessary skills to navigate the evolving landscape of digital technologies.
-This could necessitate the provision of training for each individual 
-\cite{Tanveer2020} \cite{10409934}.
+Additionally, there is the challenge of ensuring that students and educators have the necessary skills to navigate the evolving landscape of digital technologies. 
+This could necessitate the provision of training for each individual \cite{Tanveer2020} \cite{10409934}.
 %
-Another issue arises in the context of data protection and security \cite{Lin2023}. The challenge here is that the personal data of learners must be collected and processed, 
-while at the same time, security and data protection must be guaranteed \cite{Tanveer2020}.   
+Another issue arises in the context of data protection and security \cite{Lin2023}. The challenge here is that while collecting and processing the personal data 
+of learners, security and data protection must be guaranteed \cite{Tanveer2020}.
 %
-Furthermore, the potential for AI models to contain unintended biases, which may arise from the selection of training data, represents a significant challenge \cite{Lin2023}. 
-Such biases could result in the algorithms discriminating against minorities \cite{angwin2022machine}, thereby undermining the fundamental objectives of ESD.
+Furthermore, the potential for AI models to contain unintended biases, which may arise from the selection of training data, 
+represents a significant challenge \cite{Lin2023}. Such biases could result in algorithms discriminating against minorities, thereby undermining the fundamental 
+objectives of ESD \cite{angwin2022machine} \cite{mayfield-etal-2019-equity}.
 %
-A further consideration is the potential for learners to become overly reliant on technology, which could result in a dependency on the technology itself. This could ultimately 
-lead to learners being unable to perform without the technology \cite{Chin2010}.
-
-
-
+A further consideration is the potential for learners to become overly reliant on technology, which could result in dependency on the technology itself. This could 
+ultimately lead to learners being unable to perform without it \cite{Chin2010}.
 %
-\section{Discussions}
-Although the articles were selected based on the criteria outlined in the Methods section, a systematic review process was not employed in this research. A more 
-reliable set of results could have been achieved if the sources had been vetted using a systematic review approach, such as the one presented by Kitchenham 
-\cite{kitchenham2007guidelines}.
-
-Dazu kommmt das auch eine Umfangreicherer 
-
-
-
+Lastly, another issue that arises with AI in general, and particularly in the field of education, is the interpretability or traceability of the results provided by 
+AI \cite{9670009}.
+%
+%
+%
+\section{Dicussion} % 950 Zeichen 
+The study has demonstrated that the utilization of AI in the educational sector is fundamentally justified and may even result in certain advantages. 
+Nevertheless, the study has also identified several challenges associated with the implementation of AI.
+%
+Although the findings were collected based on articles selected according to the criteria outlined in the Methods section, a systematic review process was not 
+employed in this research. A more reliable set of results could have been achieved if the sources had been subjected to a systematic review process, 
+such as the one presented by Kitchenham \cite{kitchenham2007guidelines}.
+%
+Moreover, including a wider range of sources would have enriched the analysis. This would have facilitated a more nuanced understanding of the 
+impact of AI in education for sustainable development. By adopting these enhanced methodologies, the study could offer more actionable insights and recommendations 
+for educators, policymakers, and researchers working in this evolving field.
+%
+%
 %
 %
 \section{Conclusions and Future Directions}
+In summary, AI has the potential to significantly transform and improve our education system. By personalizing learning content, it can enhance student performance \cite{shemshack2020systematic} \cite{9457948}. 
+Additionally, AI can support teachers in their educational tasks by taking over some of their workload. This can help address the teacher shortage that many education systems in developing countries \cite{pholphirul2023teacher} 
+as well as industrialized countries \cite{porsch2023teacher} are struggling with. Intelligent Tutoring Systems (ITS) contribute to this effort by providing personalized instruction and immediate feedback to students, 
+thus ensuring a high-quality learning experience even in the absence of specialized teaching staff. \cite{9670009}.
 
+However, essential challenges must be overcome to ensure the sustainable and effective implementation of these technologies. In particular, infrastructural barriers need to be addressed, 
+and issues of data security and privacy must be resolved \cite{Tanveer2020} \cite{Lin2023}. Moreover, it is crucial to enhance the digital skills of teachers and students and to minimize 
+potential biases in AI models that could lead to the disadvantage of certain individuals \cite{angwin2022machine}.
+
+Ultimately, with the right approach, AI can make a decisive contribution to sustainable education worldwide, although there are still some open questions and issues to be resolved. 
+Future research should focus on developing scalable AI solutions that can be easily integrated into existing educational frameworks. Policymakers should also consider creating supportive 
+policies and funding mechanisms to address infrastructural challenges and promote the adoption of AI in education. 
 
 \newpage 
 
+
+
 \printbibliography % im Falle der Nutzung von biblatex
 \end{document}
+
+
+
